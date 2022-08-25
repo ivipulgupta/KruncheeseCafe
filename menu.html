@@ -1,0 +1,410 @@
+<!--
+   /**
+ * @author Zhoha Damani <zdamani0121@conestogac.on.ca>
+   @student id : 8730121
+   @Group Number : 9
+ */ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KRUNCHEESE CAFE - Taste the best of Town"
+    />
+  
+    <title>KRUNCHEESE CAFE | Group 9 - Menu</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png">
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <!-- jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- jquery UI  CSS-->
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+
+  <body style="background-image: initial">
+    <header>
+      <nav>
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="images/logo.png" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <ul class="links">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="menu.html" class="active">Menu</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="about.html">about</a>
+            </li>
+
+            <li>
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Menu section -->
+    <section id="menu-section">
+      <div class="section-heading">
+        <h6>Our Menus</h6>
+        <h1>Our selection of dishes with quality taste</h1>
+      </div>
+
+      <div class="divLinks">
+        <a
+          href="javascript:void(0);"
+          class="lnkActive"
+          id="lnkAll"
+          onclick="ShowMenus('all')"
+          >All</a
+        >
+        <a
+          href="javascript:void(0);"
+          id="lnkBreakfast"
+          onclick="ShowMenus('divBreakfast')"
+          >Breakfast</a
+        >
+        <a
+          href="javascript:void(0);"
+          id="lnkLunch"
+          onclick="ShowMenus('divLunch')"
+          >Lunch</a
+        >
+        <a
+          href="javascript:void(0);"
+          id="lnkDesserts"
+          onclick="ShowMenus('divDesserts')"
+          >Dinner</a
+        >
+      </div>
+
+      <div class="row menus divBreakfast">
+        <div class="column hover-shadow">
+          <span class="spanMenu">Breakfast</span>
+          <img src="images/p1.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Secret stash</span>
+            <span class="spanMenuType">Breakfast</span>
+            <span class="spanMenuPrice">Price : $7.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Breakfast</span>
+          <img src="images/p2.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Pancake</span>
+            <span class="spanMenuType">Breakfast</span>
+            <span class="spanMenuPrice">Price : $5.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Breakfast</span>
+          <img src="images/p3.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Waffle</span>
+            <span class="spanMenuType">Breakfast</span>
+            <span class="spanMenuPrice">Price : $4.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Breakfast</span>
+          <img src="images/pizza.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Salmon Egg</span>
+            <span class="spanMenuType">Breakfast</span>
+            <span class="spanMenuPrice">Price : $7.6</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row menus divLunch">
+        <div class="column hover-shadow">
+          <span class="spanMenu">Main Dishies</span>
+          <img src="images/di1.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">The Salad Bowl</span>
+            <span class="spanMenuType">Light, Healthy</span>
+            <span class="spanMenuPrice">Price : $5.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Main Dishies</span>
+          <img src="images/di2.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Meat Bobotie</span>
+            <span class="spanMenuType">Spicy</span>
+            <span class="spanMenuPrice">Price : $6.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Main Dishies</span>
+          <img src="images/di3.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Chicken Rice</span>
+            <span class="spanMenuType">spicy</span>
+            <span class="spanMenuPrice">Price : $9.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Main Dishies</span>
+          <img src="images/di4.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Meatloaf</span>
+            <span class="spanMenuType">spicy</span>
+            <span class="spanMenuPrice">Price : $9.6</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row menus divDesserts">
+        <div class="column hover-shadow">
+          <span class="spanMenu">Dinner</span>
+          <img src="images/d1.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Meat Bowl</span>
+            <span class="spanMenuType">Spicy</span>
+            <span class="spanMenuPrice">Price : $5.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Dinner</span>
+          <img src="images/d2.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">taqueria kebab</span>
+            <span class="spanMenuType">Spicy</span>
+            <span class="spanMenuPrice">Price : $2.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Dinner</span>
+          <img src="images/d3.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Steak</span>
+            <span class="spanMenuType">Spicy</span>
+            <span class="spanMenuPrice">Price : $5.6</span>
+          </div>
+        </div>
+        <div class="column hover-shadow">
+          <span class="spanMenu">Dinner</span>
+          <img src="images/d4.jpg" />
+          <div class="divSubDetail">
+            <span class="spanMenuName">Spicy Shrimps</span>
+            <span class="spanMenuType">sweet</span>
+            <span class="spanMenuPrice">Price : $5.6</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reservations section -->
+
+    <section id="reservations-section">
+      <div class="reservations-row">
+        <div class="reservations-info">
+          <h6>CONTACT US</h6>
+          <h1>Here You Can Make A Reservation Or Just walkin to our cafe.</h1>
+          <p>
+            Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a
+            eleifend riqsie, namei sollicitudin urna diam, sed commodo purus
+            porta ut.
+          </p>
+          <div id="contact-informartion">
+            <div class="phone">
+              <h2>Phone Numbers</h2>
+              <ul class="phone-number-list">
+                <li>080-090-0990</li>
+                <li>080-090-0880</li>
+              </ul>
+            </div>
+            <div class="emails">
+              <h2>Emails</h2>
+              <ul class="emails-list">
+                <li>hello@company.com</li>
+                <li>info@company.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="reservations-form">
+          <form
+            id="reservation-form"
+            name="email_form"
+            action="thanks.html"
+            method="POST"
+          >
+            <h2>Table Reservation</h2>
+            <div class="form-row">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name *"
+              />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email address *"
+              />
+            </div>
+            <div class="form-row">
+              <input
+                type="text"
+                name=""
+                id="phone"
+                placeholder="Phone Number  *"
+              />
+              <select
+                value="number-guests"
+                name="number-guests"
+                id="number-guests"
+              >
+                <option value="number-guests">
+                  Number Of Guests - 1 *
+                </option>
+
+                <option value="2" name="2" id="2">2</option>
+                <option value="3" name="3" id="3">3</option>
+                <option name="4plus" id="4">4+</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <input type="text" id="datepicker" placeholder="Pick a date  *" />
+            </div>
+            <div class="form-row">
+              <textarea
+                name="message"
+                rows="5"
+                id="message"
+                placeholder="Message *"
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" id="form-submit" class="main-button-icon">
+                Make A Reservation
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-col-1">
+            <h3 class="title">Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <h3 class="title">Newsletter</h3>
+            <div class="newsletter">
+              <p>
+                Enter your email address for a 20% off voucher next time you
+                come visit us
+              </p>
+              <br />
+              <form>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Your email here"
+                  id="email_news"
+                />
+                <!-- This is what will be included inside the popup -->
+                <div class="popup hide" id="popup">
+                  <p>Hello!</p>
+                  <p>Thank you for signing up to our Newsletter.</p>
+                  <p>
+                    Our newsletter will be delivered shortly to the email
+                    address : <em><span id="pop-email"></span></em>
+                  </p>
+                  <a href="#" id="close">Close</a>
+                </div>
+                <button class="btn-news">Submit</button>
+                <p><span></span></p>
+              </form>
+            </div>
+          </div>
+          <div class="footer-col-3">
+            <h3 class="title">Get in Touch</h3>
+            <i class="fas fa-location-arrow" style="font-size: 18px"></i> 340
+            Yonge St, Toronto , CA<br />
+            <i class="fas fa-envelope" style="font-size: 18px"></i>
+            hello@kruncheesecafe.com<br />
+            <i class="fas fa-phone" style="font-size: 18px"></i> +1 416-596-9613
+          </div>
+          <div class="footer-col-4">
+            <h3 class="title">Follow Us</h3>
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="Facebook Link"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="Instagram Link"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="images/twitter.jpeg" alt="Twitter Link"></a>
+            <a href="https://snapchat.com/" target="_blank"><img src="images/snapchat.jpeg" alt="Snapchat Link"></a>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu-container">
+              <div class="f-menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <hr />
+        <p class="copyright">
+          Copyright &copy; 2021 - JavaScript Final Project - Group 9
+        </p>
+        <div class="clock-container">
+          <div class="footer-js">
+            <div class="div-clock">
+              <div id="myClockDisplay" class="clock" onload="showTime()"></div>
+            </div>
+            <div class="div-date">
+              <div id="myDateDisplay" class="date" onload="today()"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </footer>
+
+    <!-- scripts -->
+    <script src="js/menu.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   /**
+ * @author Yashkumar Patel <ypatel9620@conestogac.on.ca>
+   @student id : 8739620
+   @Group Number : 9
+ */ 
+-->
+
+<aboutus>
+    <info>
+        <title>READ OUR STORY</title>
+        <heading>We've been Making The Delicious Foods Since 1999</heading>
+        <bio>Royal was a restaurant in The Hague, Canada. It was a fine dining restaurant that was awarded one Michelin star in 1958 and retained that rating until 1968. </bio>
+
+        <data>The building in which the restaurant was located was once the residence of Constantijn Huygens. Restaurant Royal was housed at the address Kneuterdijk 1 from August 1890 till 1918. In 1918, the restaurant, at that time under the leadership of L.J.A. Kemper, relocated to the address Lange Voorhout 44.</data>
+    </info>
+</aboutus>

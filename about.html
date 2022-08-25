@@ -1,0 +1,438 @@
+<!--
+   /**
+ * @author Yashkumar Patel <ypatel9620@conestogac.on.ca>
+   @student id : 8739620
+   @Group Number : 9
+ */ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KRUNCHEESE CAFE - Taste the best of Town">
+
+    <title>KRUNCHEESE CAFE | Group 9 - About Us</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>About Us</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="js/aboutus.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="images/logo.png" class="logo" alt="logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <ul class="links">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="active">about</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="fadeIn">
+        <!-- History using XML -->
+        <section class="about-us">
+            <div id="text-data">
+                <h4 id="title"></h4>
+                <h2 id="heading"></h2>
+                <b>
+                    <p id="p1"></p>
+                    <p id="p2"></p>
+                </b>
+            </div>
+
+            <img id="about-img" src="images/about-image.png" alt="" />
+        </section>
+
+        <!-- About the Chefs -->
+        <section id="chef-heading">
+            <h2 id="chef-main">Meet our Chefs</h2>
+            <h4 id="subtitle">THEY ARE NICE &amp; FRIENDLY.</h4>
+        </section>
+
+        <section id="chef-list">
+            <div class="team">
+                <div class="chef-name">
+                    <img class="chef-img" src="../images/team-image1.jpg" alt="" />
+                    <div class="teamlist">
+                        <h4 class="text">
+                            Canadian Celebrity Chef,<br />
+                            Masterchef India Judge.
+                        </h4>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square"></a></li>
+                            <li><a href="#" class="fa fa-twitter-square"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="teaminfo">
+                    <h2 class="name">New Catherine</h2>
+                    <h4 class="designation">KITCHEN OFFICER</h4>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="chef-name">
+                    <img class="chef-img" src="../images/team-image2.jpg" alt="" />
+                    <div class="teamlist">
+                        <h4 class="text">
+                            Canadian Celebrity Chef, <br />
+                            Michlin Star Chef.
+                        </h4>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square"></a></li>
+                            <li><a href="#" class="fa fa-twitter-square"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="teaminfo">
+                    <h2 class="name">Lindsay Perlen</h2>
+                    <h4 class="designation">OWNER & MANAGER</h4>
+                </div>
+            </div>
+
+            <div class="team">
+                <div class="chef-name">
+                    <img class="chef-img" src="../images/team-image3.jpg" alt="" />
+                    <div class="teamlist">
+                        <h4 class="text">
+                            Canadian Celebrity Chef,<br />
+                            Culinary Master.
+                        </h4>
+                        <ul class="social-icon">
+                            <li><a href="#" class="fa fa-facebook-square"></a></li>
+                            <li><a href="#" class="fa fa-twitter-square"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="teaminfo">
+                    <h2 class="name">Isabella Grace</h2>
+                    <h4 class="designation">PIZZA SPECIALIST</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regularl Dishes -->
+        <div class="whitespace"></div>
+        <section class="regulardishes">
+            <h2 class="dishtitle">CHECK OUT OUR REGULAR DISHES.</h2>
+
+            <div class="menu">
+                <div class="starters list">
+                    <div>
+                        <a href="../images/s2.jpg" data-lightbox="s2" data-title="Starter"><img id=""
+                                src="../images/s2.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Starter</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/sa.jpg" data-lightbox="s2" data-title="Starter"><img id=""
+                                src="../images/sa.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/stater1.jpg" data-lightbox="s2" data-title="Starter"><img id=""
+                                src="../images/stater1.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/stater2.jpg" data-lightbox="s2" data-title="Starter"><img id=""
+                                src="../images/stater2.jpg" width="300px" /></a>
+                        <p>Starter</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/stater3.jpg" data-lightbox="s2" data-title="Starter"><img id=""
+                                src="../images/stater3.jpg" width="300px" /></a>
+                        <p>Starter</p>
+                    </div>
+                </div>
+
+                <div class="maindishes list">
+                    <div>
+                        <a href="../images/main.jpg" data-lightbox="main" data-title="Main Dishes"><img id=""
+                                src="../images/main.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Main Dishes</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/main2.jpg" data-lightbox="main" data-title="Main Dishes"><img id=""
+                                src="../images/main2.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/main3.jpg" data-lightbox="main" data-title="Main Dishes"><img id=""
+                                src="../images/main3.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/main4.jpg" data-lightbox="main" data-title="Main Dishes"><img id=""
+                                src="../images/main4.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/main5.jpg" data-lightbox="main" data-title="Main Dishes"><img id=""
+                                src="../images/main5.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                </div>
+
+                <div class="desserts list">
+                    <div>
+                        <a href="../images/dessert.jpg" data-lightbox="dessert1" data-title="Dessert"><img id=""
+                                src="../images/dessert.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Dessert</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/dessert1.jpg" data-lightbox="dessert1" data-title="Dessert"><img id=""
+                                src="../images/dessert1.jpg" width="300px" /></a>
+                        <p>Dessert</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/dessert2.jpg" data-lightbox="dessert1" data-title="Dessert"><img id=""
+                                src="../images/dessert2.jpg" width="300px" /></a>
+                        <p>Dessert</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/dessert3.jpg" data-lightbox="dessert1" data-title="Dessert"><img id=""
+                                src="../images/dessert3.jpg" width="300px" /></a>
+                        <p>Dessert</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/dessert4.jpg" data-lightbox="dessert1" data-title="Dessert"><img id=""
+                                src="../images/dessert4.jpg" width="300px" /></a>
+                        <p>Dessert</p>
+                    </div>
+                </div>
+
+                <div class="sandwichies list">
+                    <div>
+                        <a href="../images/sandwichies.jpg" data-lightbox="sandwich" data-title="Sandwichies"><img id=""
+                                src="../images/sandwichies.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Sandwichies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/sandwich4.jpg" data-lightbox="sandwich" data-title="Sandwichies"><img id=""
+                                src="../images/sandwich4.jpg" width="300px" /></a>
+                        <p>Sandwichies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/sandwich1.jpg" data-lightbox="sandwich" data-title="Sandwichies"><img id=""
+                                src="../images/sandwich1.jpg" width="300px" /></a>
+                        <p>Sandwichies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/sandwich2.jpg" data-lightbox="sandwich" data-title="Sandwichies"><img id=""
+                                src="../images/sandwich2.jpg" width="300px" /></a>
+                        <p>Sandwichies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/sandwich3.jpg" data-lightbox="sandwich" data-title="Sandwichies"><img id=""
+                                src="../images/sandwich3.jpg" width="300px" /></a>
+                        <p>Sandwichies</p>
+                    </div>
+                </div>
+
+                <div class="pizza list">
+                    <div>
+                        <a href="../images/pizza.jpg" data-lightbox="pizza" data-title="Pizza"><img id=""
+                                src="../images/pizza.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Pizza</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/pizza2.jpg" data-lightbox="pizza" data-title="Pizza"><img id=""
+                                src="../images/pizza2.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/p1.jpg" data-lightbox="pizza" data-title="Pizza"><img id=""
+                                src="../images/p1.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/p2.jpg" data-lightbox="pizza" data-title="Pizza"><img id=""
+                                src="../images/p2.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/p3.jpg" data-lightbox="pizza" data-title="Pizza"><img id=""
+                                src="../images/p3.jpg" width="300px" /></a>
+                        <p>Main Dishies</p>
+                    </div>
+                </div>
+
+                <div class="drinks list">
+                    <div>
+                        <a href="../images/drink1.jpg" data-lightbox="drinks" data-title="Drinks"><img id=""
+                                src="../images/drink1.jpg" width="350px" height="310px" /></a>
+                        <p class="regular-design">Drinks</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/drink1.jpg" data-lightbox="drinks" data-title="Drinks"><img id=""
+                                src="../images/drink1.jpg" width="300px" /></a>
+                        <p>Drinks</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/drink2.jpg" data-lightbox="drinks" data-title="Drinks"><img id=""
+                                src="../images/drink2.jpg" width="300px" /></a>
+                        <p>Drinks</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/drink3.jpg" data-lightbox="drinks" data-title="Drinks"><img id=""
+                                src="../images/drink3.jpg" width="300px" /></a>
+                        <p>Drinks</p>
+                    </div>
+                    <div style="display: none">
+                        <a href="../images/drink4.jpg" data-lightbox="drinks" data-title="Drinks"><img id=""
+                                src="../images/drink4.jpg" width="300px" /></a>
+                        <p>Drinks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <h3 class="title">Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="" />
+                        <img src="images/app-store.png" alt="" />
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <h3 class="title">Newsletter</h3>
+                    <div class="newsletter">
+                        <p>
+                            Enter your email address for a 20% off voucher next time you
+                            come visit us
+                        </p>
+                        <br />
+                        <form>
+                            <input class="form-control" type="email" placeholder="Your email here" id="email_news" />
+                            <!-- This is what will be included inside the popup -->
+                            <div class="popup hide" id="popup">
+                                <p>Hello!</p>
+                                <p>Thank you for signing up to our Newsletter.</p>
+                                <p>
+                                    Our newsletter will be delivered shortly to the email
+                                    address : <em><span id="pop-email"></span></em>
+                                </p>
+                                <a href="#" id="close">Close</a>
+                            </div>
+                            <button class="btn-news">Submit</button>
+                            <p><span></span></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <h3 class="title">Get in Touch</h3>
+                    <i class="fas fa-location-arrow" style="font-size: 18px"></i> 340
+                    Yonge St, Toronto , CA<br />
+                    <i class="fas fa-envelope" style="font-size: 18px"></i>
+                    support@champsports.com<br />
+                    <i class="fas fa-phone" style="font-size: 18px"></i> +1 416-596-9613
+                </div>
+                <div class="footer-col-4">
+                    <h3 class="title">Follow Us</h3>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-menu">
+                    <div class="footer-menu-container">
+                        <div class="f-menu">
+                            <a href="index.html">Home</a>
+                            <a href="menu.html">Menu</a>
+                            <a href="about.html">Gallery</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="to-top" href="#myPage" id="toTop">
+                <i class="fa fa-chevron-up"></i></a>
+            <hr />
+            <p class="copyright">
+                Copyright &copy; 2021 - JavaScript Final Project - Group 9
+            </p>
+            <div class="clock-container">
+                <div class="footer-js">
+                    <div class="div-clock">
+                        <div id="myClockDisplay" class="clock" onload="showTime()"></div>
+                    </div>
+                    <div class="div-date">
+                        <div id="myDateDisplay" class="date" onload="today()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-feedback" id="dialog2">Feedback</button>
+        <hr />
+        <div id="nonmodal2">
+            <p>
+                Please enter your valuable Feedback in form of any suggestions or
+                improvements in the functionality/content on this website.
+            </p>
+            <div class="wrapper">
+                <p>Details (100 character limit)</p>
+                <textarea name="the-textarea" id="the-textarea" placeholder="Enter Your Text Here"></textarea>
+                <div class="the-count">
+                    <p id="characterNotification">
+                        You have <span id="characterCounter">XXX</span> characters of
+                        <span id="maximum">XXX</span> left
+                    </p>
+                </div>
+                <button class="btn-feedback" id="dialog2">Send Feedback</button>
+            </div>
+        </div>
+    </footer>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

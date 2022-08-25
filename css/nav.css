@@ -1,0 +1,125 @@
+.nav-center {
+    padding: 1em;
+    background: white;
+    width: 100%;
+    /*   align-items:center; */
+    /*   justify-content: space-between; */
+    width: 100%;
+    font-family: "Poppins", sans-serif !important;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-header img {
+    cursor: pointer;
+    height: 50px;
+    
+    float: left;
+    margin: 10px;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    /*   height: 80vh; */
+    transition: all 1s ease-in-out;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .show-links {
+    height: 80vh;
+    transition: all 1s ease-in-out;
+  }
+  .links li {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 1em 1em;
+    letter-spacing: 2px;
+    margin: auto;
+  }
+  
+  .links li a {
+    font-family: "Poppins", sans-serif !important;
+    color: #fb5849;
+  
+    transition: 0.1s border linear;
+  }
+  .links li a:hover {
+    border-bottom: #fb5849 4px solid;
+  }
+  
+  
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: #fb5849;
+    background: transparent;
+    border-color: transparent;
+    transition: 1s all linear;
+    cursor: pointer;
+    justify-self: flex-end;
+    outline: none;
+  }
+  .nav-toggle:hover {
+    color: #fb5849;
+    transform: rotate(90deg);
+    outline: none;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .nav-toggle {
+      display: none;
+    }
+  
+    .nav-header {
+      display: block;
+    }
+  
+    .links {
+      flex-direction: row;
+      height: auto;
+      display: flex;
+    }
+    .links li {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 1em 1em;
+      margin: auto;
+    }
+    .links li .active{
+      border-bottom: 4px solid #fb5849;
+    }
+    .social-icons {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      border: none;
+      padding:1em;
+    }
+  
+    .social-icons li {
+      margin: auto;
+  
+      font-size: 1.2rem;
+    }
+  
+    .nav-center {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }  

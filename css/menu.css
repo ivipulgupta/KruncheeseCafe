@@ -1,0 +1,520 @@
+<!--
+   /**
+ * @author Zhoha Damani <zdamani0121@conestogac.on.ca>
+   @student id : 8730121
+   @Group Number : 9
+ */ 
+-->
+
+/* importing poppings font from google */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*::selection {
+  background-color: #fb5849;
+  color: #fff;
+}
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{ 
+  background-color: #fffafa;
+}
+
+#menu-section {
+  padding: 1em;
+  font-family: "Poppins", sans-serif !important;
+}
+
+#menu-section h1 {
+  line-height: 150% !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 30px !important;
+  font-weight: 900;
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+}
+
+#menu-section h6 {
+  position: relative;
+  font-size: 18px !important;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+#menu-section h6::before {
+  width: 30px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fb5849;
+}
+
+
+/* menu division */
+.divLinks {
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.divLinks a {
+  font-size: 18px !important;
+  background: #fff none repeat scroll 0 0;
+  border-radius: 5px;
+  color: #2a2a2a;
+  /* display: inline-block; */
+  border: #fb5849 solid 2px;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 10px 20px;
+  width: 20%;
+  font-size: 18px;
+  text-decoration: initial;
+}
+.lnkActive {
+  background-color: #fb5849 !important;
+  color: white !important;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.divSubDetail {
+  color: #fffafa;
+  background-color: #fb5849;
+  padding: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.spanMenuName {
+  color: #fffafa;
+  background-color: #fb5849;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.spanMenuType {
+  color: #fffafa;
+  background-color: #fb5849;
+  font-size: 18px;
+  text-transform: capitalize;
+  display: block;
+  font-weight: 500;
+}
+
+.spanMenuPrice {
+  color: #fffafa;
+  background-color: #fb5849;
+  font-size: 18px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.spanMenu {
+  background: linear-gradient(to right, #fb5849, #f7ae05a8);
+  font-size: 16px;
+  position: absolute;
+  padding: 5px 10px;
+  color: white;
+  margin: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.row > .column {
+  padding: 0px;
+  border: 1px solid #ccc9c9;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column {
+  cursor: pointer;
+  float: left;
+  width: 33%;
+}
+
+.column img {
+  width: 100%;
+  max-width: 400px;
+  border-bottom: 1px solid #ccc9c9;
+  height: 100%;
+  max-height: 400px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* menu division */
+  .divLinks {
+    text-align: center;
+    padding: 1em 1em;
+  }
+  .divLinks a {
+    display: inline-block;
+  }
+  #menu-section h1 {
+    line-height: 150% !important;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 30px !important;
+  }
+  #menu-section h6 {
+    font-size: 22px !important;
+  }
+  #menu-section {
+    padding: 4em 2em;
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+  .row > .column {
+    margin: 1em;
+  }
+  .spanMenuPrice {
+    font-size: 18px !important;
+  }
+  .spanMenuType {
+    font-size: 18px;
+    text-transform: capitalize;
+    display: block;
+    font-weight: 500;
+  }
+  .spanMenuName {
+    font-size: 22px;
+  }
+  .divLinks a {
+    font-size: 20px !important;
+  }
+  .column {
+    width: 33%;
+  }
+  .column img {
+    width: 100%;
+    max-width: 650px;
+    max-height: 650px;
+    border-bottom: 1px solid #ccc9c9;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-section .section-heading {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .spanMenu {
+    font-size: 18px !important;
+    padding: 10px 20px;
+  }
+
+  /* reservations */
+  .reservations-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  
+.reservations-info {
+    padding:10px;
+}
+.reservations-info #contact-informartion {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+}
+#contact-informartion .phone,
+#contact-informartion .emails {
+  padding: 1em 1.2em;
+  margin-left: 1em !important;
+}
+.phone-number-list li, .emails-list li{
+  font-size: 20px !important;
+}
+
+.reservations-form {
+    float: right;
+    font-size: 18px !important;
+    padding: 1em;
+
+  }
+  
+  #reservation-form {
+    background-color: #fffafa;
+    padding: 1.2em;
+    border-radius: 10px;
+  }
+  #reservation-form input,
+#reservation-form textarea,
+#reservation-form select
+
+{
+  color: #2a2a2a;
+  font-size: 18px !important;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+ 
+  margin-bottom: 15px;
+  padding: .5em .8em !important;
+}
+.reservations-info h1 {
+  
+    font-size: 28px !important;
+
+  }
+  
+  .reservations-info h6 {
+ 
+    font-size: 18px !important;
+
+  }
+  .reservations-info p {
+  
+    font-size: 20px !important;
+
+  }
+  .form-row {
+
+    flex-direction: row !important;
+  }
+  #reservation-form input,
+#reservation-form textarea,
+#reservation-form select {
+
+  width: 100%;
+}
+#form-submit {
+  
+    padding: 1em 1.2em !important;
+    width: 100%;
+    font-size: 22px !important;
+  
+}
+}
+
+/* reservations */
+
+.reservations-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 22px;
+  background-color: #2a2a2a;
+  background-image: url(../images/reservation-bg.jpg);
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reservations-info {
+
+  font-size: 22px;
+  padding:10px;
+}
+
+.reservations-info {
+
+  font-family: "Poppins", sans-serif !important;
+}
+
+.reservations-info h1 {
+  line-height: 150% !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 25px ;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #fffafa;
+  font-family: "Poppins", sans-serif;
+}
+
+.reservations-info h6 {
+  position: relative;
+  font-size: 18px ;
+  color: #fffafa;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 2em 0;
+  outline: 0;
+}
+.reservations-info h6::before {
+  width: 30px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fffafa;
+}
+
+.reservations-info p {
+  line-height: 120% !important;
+  margin: 2em 0;
+  font-size: 18px ;
+  letter-spacing: 2px;
+  color: #fffafa;
+  font-family: "Poppins", sans-serif;
+}
+
+.reservations-info #contact-informartion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+#contact-informartion .phone,
+#contact-informartion .emails {
+  background-color: white;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#contact-informartion .phone h2,
+#contact-informartion .emails h2 {
+  font-size: 22px;
+}
+.phone-number-list,
+.emails-list {
+  list-style: none;
+}
+
+.phone-number-list li,
+.emails-list li {
+  font-size: 20px;
+}
+
+.reservations-form {
+  font-size: 22px;
+ 
+}
+
+#reservation-form {
+  background-color: #fffafa;
+  border-radius: 10px;
+}
+#reservation-form h2 {
+  font-size: 25px;
+  padding: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  margin: 0 1em;
+}
+
+
+    .reservations-form {
+  
+        margin: 1em;
+}
+
+#reservation-form input,
+#reservation-form textarea,
+#reservation-form select {
+  color: #2a2a2a;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+ 
+  border-radius: 5px;
+  outline: none;
+
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+button,
+input {
+  overflow: visible;
+}
+#form-submit {
+    margin: 1em 1em;
+    font-size: 13px;
+    color: #fff;
+    background-color: #fb5849;
+    padding: 10px;
+    /* width: 100%; */
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#phone-fa,
+#email-fa {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  background-color: #fb5849;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-top: -35px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  .sayThanks h2{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif !important;
+  }
+
+  .sayThanks span{
+    color: #fb5849;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif !important;
+    letter-spacing: 2px;
+    text-decoration:underline;
+  }

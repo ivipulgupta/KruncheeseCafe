@@ -1,0 +1,225 @@
+<!--
+   /**
+ * @author Neelkumar Patel <npatel9133@conestogac.on.ca>
+   @student id : 8759133
+   @Group Number : 9
+ */ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KRUNCHEESE CAFE - Taste the best of Town">
+    <title>KRUNCHEESE CAFE | Group 9 - Contact Us</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo.png">
+    <link rel="stylesheet" href="css/contactus.css" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/contactus.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+ <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script>
+    	$(document).ready(function() {
+			$("#accordion").accordion(
+				{ 
+					event: "mouseover",
+					heightStyle: "content",
+					collapsible: true 
+				});
+	    });
+	</script>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <div class="nav-center">
+              <!-- nav header -->
+              <div class="nav-header">
+                  <img src="images/logo.png" class="logo" alt="logo" />
+                  <button class="nav-toggle">
+                      <i class="fas fa-bars"></i>
+                  </button>
+              </div>
+              <!-- links -->
+              <ul class="links">
+                  <li>
+                      <a href="index.html">home</a>
+                  </li>
+                  <li>
+                      <a href="menu.html">Menu</a>
+                  </li>
+                  <li>
+                      <a href="gallery.html">Gallery</a>
+                  </li>
+                  <li>
+                      <a href="about.html">about</a>
+                  </li>
+
+                  <li>
+                      <a href="contact.html" class="active">contact</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  <section id="outer-wrapper">
+    <div class="wrapper">
+      <h2>Contact us</h2>
+      <div id="error_message"></div>
+      <form action="" id="myform" onsubmit="return validate();">
+        <div class="input_field">
+          <input type="text" placeholder="Name *" id="name" />
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Subject *" id="subject" />
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Phone *" id="phone" />
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Email *" id="email" />
+        </div>
+        <div class="input_field">
+          <textarea placeholder="Message *" id="message"></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  
+
+    <div id="accordion">
+      <h2>FAQ's</h2>
+      <br />
+      <h3>Is there a need to reserve a table?</h3>
+      <div>
+        <p>
+          Reservations are highly recommended to confirm your booking and to
+          also inquire about COVID-19 indoor dining restrictions being
+          implemented in the location’s serving region.
+        </p>
+      </div>
+      <h3>What methods of payment do you accept?</h3>
+      <div>
+        <p>
+          We accept cash, Visa, MasterCard, American Express and debit. There is
+          also an ATM machines located in our restaurant. If you require an ATM
+          machine, please contact the reception in order to confirm
+          availability.
+        </p>
+      </div>
+      <h3>Is nutritional information available?</h3>
+      <div>
+        <p>
+          Our restaurant operate to the standards outlined in the Healthy Menu
+          Choices Act. Food items are analyzed and comprehensive caloric
+          information is displayed in-store, online and on our promotional
+          materials. For customers with dietary restrictions, we always
+          recommend contacting the restaurant. A Manager would be pleased to
+          answer additional questions and help them plan their next experience.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="whitespace">
+      
+  </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.0281261968044!2d-79.3830923851197!3d43.647583160812985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d2d0792a29%3A0x86a52a26df8b2ee8!2sCanoe!5e0!3m2!1sen!2sca!4v1629382668387!5m2!1sen!2sca"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+  
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col-1">
+              <h3 class="heading-3 title" >Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png" alt="" />
+                <img src="images/app-store.png" alt="" />
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <h3 class="heading-3 title" >Newsletter</h3>
+              <div class="newsletter">
+                <p>
+                  Enter your email address for a 20% off voucher next time you
+                  come visit us
+                </p>
+                <br />
+                <form>
+                  <input class="form-control" type="email" placeholder="Your email here" id="email_news" />
+                  <!-- This is what will be included inside the popup -->
+                  <div class="popup hide" id="popup">
+                    <p>Hello!</p>
+                    <p>Thank you for signing up to our Newsletter.</p>
+                    <p>
+                      Our newsletter will be delivered shortly to the email
+                      address : <em><span id="pop-email"></span></em>
+                    </p>
+                    <a href="#" id="close">Close</a>
+                  </div>
+                  <button class="btn-news">Submit</button>
+                  <p><span></span></p>
+                </form>
+              </div>
+            </div>
+            <div class="footer-col-3">
+              <h3 class="heading-3 title" >Get in Touch</h3>
+              <i class="fas fa-location-arrow" style="font-size: 18px"></i> 340
+              Yonge St, Toronto , CA<br />
+              <i class="fas fa-envelope" style="font-size: 18px"></i>
+              hello@kruncheesecafe.com<br />
+              <i class="fas fa-phone" style="font-size: 18px"></i> +1 416-596-9613
+            </div>
+            <div class="footer-col-4">
+              <h3 class="title">Follow Us</h3>
+              <a href="https://facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="Facebook Link"></a>
+              <a href="https://instagram.com/" target="_blank"><img src="images/instagram.jpeg" alt="Instagram Link"></a>
+              <a href="https://twitter.com/" target="_blank"><img src="images/twitter.jpeg" alt="Twitter Link"></a>
+              <a href="https://snapchat.com/" target="_blank"><img src="images/snapchat.jpeg" alt="Snapchat Link"></a>
+            </div>
+            <div class="footer-menu">
+              <div class="footer-menu-container">
+                <div class="f-menu">
+                  <a href="index.html">Home</a>
+                  <a href="menu.html">Menu</a>
+                  <a href="about.html">Gallery</a>
+                  <a href="about.html">About</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copyright">
+            Copyright &copy; 2021 - JavaScript Final Project - Group 9
+          </p>
+          <div class="clock-container">
+            <div class="footer-js">
+              <div class="div-clock">
+                <div id="myClockDisplay" class="clock" onload="showTime()"></div>
+              </div>
+              <div class="div-date">
+                <div id="myDateDisplay" class="date" onload="today()"></div>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+      </footer>
+      <script src="js/nav.js"></script>
+  </body>
+</html>

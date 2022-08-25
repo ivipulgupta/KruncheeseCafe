@@ -1,0 +1,872 @@
+/* 
+   @author Damanpreet Grewal <dgrewal2500@conestogac.on.ca>
+   @student id : 8752500
+   @Group Number : 9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+  display: block;
+}
+
+body {
+  margin: 0;
+
+    background-color: #fffafa;
+    
+  font-family: "Poppins", sans-serif !important;
+}
+
+#banner-slide-show {
+  margin: 0px;
+  background-color: black;
+  background-image: url("../images/slide-01.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 670px;
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+#banner-text {
+  padding-top: 10px;
+}
+
+#banner-slide-show div {
+  display: flex !important;  
+  color: rgb(219, 89, 165);
+  text-shadow: 2px 2px 2px black;
+  font-family: Black Jack, Arial, sans-serif;
+  text-shadow: 1px 1px 1px white;
+  /* padding-top: 7%; */
+  font-size: 4em;
+  justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+#banner-slide-show span {
+  font-size: 1.5em;  
+  font-weight: bolder;
+}
+
+/* About us on Home Page Start*/
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+li img {
+  width: 80px;
+  height: 80px;
+}
+
+.about-section {
+  width: 100%; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+}
+@media screen and (max-width:1200px){
+  .content-section {
+ 
+    width: 100% !important;
+  }
+  
+  .image-section {
+     width: 100% !important;
+     order: -1;
+     
+     justify-self: flex-end;
+  }
+}
+
+
+
+.about-container {
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding: 1em;
+}
+
+.content-section {
+  float: left;
+  width: 50%;
+}
+
+.image-section {
+   width: 50%;
+   float: right;
+   justify-self: flex-end;
+}
+
+.image-section img {
+  margin-left: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: auto;   
+}
+
+#about-sec h1 {
+  line-height: 150% !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 15px !important;
+  font-weight: bold;
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+}
+
+#about-sec h6 {
+  position: relative;
+  font-size: 18px !important;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif !important;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+#about-sec h6::before {
+  width: 30px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fb5849;
+}
+
+/* Gallery Home Page*/
+
+
+#gallery-h1 {
+  position: relative;
+  font-size: 18px ;
+  color: #fffafa;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 2em 0;
+  outline: 0;
+}
+#gallery-h1::before {
+  width: 30px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fffafa;
+}
+
+
+.tm-gallery-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  padding-bottom: 100px;
+  padding-top: 1em;
+  padding-left: 1em;
+  background-color: rgba(251,88,73,2)
+  
+}
+
+.tm-gallery {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-gallery figure {
+  position: relative;
+  z-index: 50;
+  overflow: hidden;
+  margin: 15px;
+  min-width: 200px;
+  max-width: 250px;
+  max-height: 250px;
+  width: 25%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tm-gallery figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.tm-gallery figure figcaption {
+  padding: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.tm-gallery figure figcaption,
+.tm-gallery figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tm-gallery figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.tm-gallery figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.tm-gallery figure h2 span {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.tm-gallery figure h2,
+.tm-gallery figure p {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.tm-gallery figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-hover {
+  background: rgb(26, 25, 25);
+}
+
+figure.effect-hover img,
+figure.effect-hover h2 {
+  transition: transform 0.35s;
+  font-family: "Poppins", sans-serif !important;
+}
+
+figure.effect-hover h2,
+figure.effect-hover p {
+  position: absolute;
+  font-family: "Poppins", sans-serif !important;
+  bottom: 0;
+  left: 0;
+  padding: 30px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+figure.effect-hover p {
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+}
+
+figure.effect-hover:hover img {
+  transform: translate3d(0, -80px, 0);
+}
+
+figure.effect-hover:hover h2 {
+  transform: translate3d(0, -100px, 0);
+}
+
+figure.effect-hover:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.tm-gallery .tm-gallery-item.hide {
+  display: none;
+}
+
+.tm-paging {
+  display: flex;
+  justify-content: center;
+}
+
+
+.tm-paging-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #999;
+  background-color: #222;
+  margin:15px;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+.tm-paging-link:hover{
+  background-color: #612929;
+}
+.tm-paging-link.active {
+  background-color: #444444;
+}
+
+/* Banner Section IIFE*/
+
+.section-large-text {
+  position: relative;
+  background: url("../images/foodback3.jpg") bottom center/cover
+    no-repeat;
+  height: 600px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.section-large-text-inner {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 860px;
+  padding: 5rem 0;
+}
+
+.section-large-text-inner h2 {
+  font-size: 5rem; 
+  color: #c82719;
+  text-shadow: 1px 1px 1px white;
+}
+
+.section-large-text-inner h3 {
+  font-size: 3rem;
+  margin-top: 1em;
+  color: #6e6fb8;
+  text-shadow: 1px 1px 1px white;
+}
+
+.section-large-text-inner p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3em;
+  color: rgb(240, 1, 81);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  letter-spacing: 2px;
+  font-family: Black Jack, Arial, sans-serif;
+}
+
+/* Restaraunt Timings */
+
+#openingtime {
+  height: 550px;
+  width: 100%;
+  color: black;
+  background-image: url(../images/foodback2.jpg);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat;
+}
+#openingtimecontent {
+  padding-top: 3%;
+  text-align: center;
+  color: white;
+  padding-left: 8%;
+  height: 600px;
+  font-size: 2.2em;
+  width: 92%;
+}
+#openingtimecontent h3 {
+  font-size: 1.8em;
+  margin-top: 2rem;
+  color: #c82719;
+  text-shadow: 1px 1px 1px white;
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+#openingtimecontent p{
+  font-size: 1em;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif !important;
+  color: #6e6fb8;
+  text-shadow: 1px 1px 1px white;
+  letter-spacing: 2px;
+}
+
+#openingtimecontent p span{  
+  color: #4f52ee;
+  text-decoration: underline;
+  font-style: italic;
+  
+ 
+}
+
+/*---- Testimonials -----*/
+.carousel {
+  width: 99.2vw;
+  height: 400px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.carousel:hover .controls {
+  opacity: 1;
+}
+.carousel .controls {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+.carousel .controls .control {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.5;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+.carousel .controls .control:hover {
+  opacity: 1;
+}
+.carousel .slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+.carousel .slides .slide {
+  min-width: 100%;
+  height: auto;
+}
+.carousel .slides img {
+  height: auto;
+}
+
+/* --- Menu for Specials -----*/
+ 
+#menu-sec {
+  padding-top: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+#menu-sec h1 {
+  line-height: 150% !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 28px !important;
+  font-weight: bold;
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+}
+
+#menu-sec h6 {
+  position: relative;
+  font-size: 18px !important;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif !important;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+*::selection {
+  background-color: #fb5849;
+  color: #fff;
+}
+.specials {
+  margin-top: 3em;
+}
+
+.specials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  margin: auto;
+}
+
+.special-dish {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.special-dish img {
+  float: left;
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.dish-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dish-info h4 {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.dish-info p {
+  margin-right: 100px;
+}
+
+.price h6 {
+  width: 100px;
+  height: 100px;
+  background-color: #fb5849;
+  display: inline-block;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#menu-tabs {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 1em;
+  padding: 1em;
+  width: 450px;
+  margin: auto;
+  outline: 0;
+}
+
+#menu-tabs li {
+  width: 100px;  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  outline: 0;
+}
+#menu-tabs li img{
+  height: auto;
+  width: 100%;
+}
+ 
+#menu-tabs li img:hover{
+  box-shadow: none;
+}
+
+#menu-tabs li a {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  outline: 0;
+}
+
+#menu-tabs li a:hover {
+  color: red;
+}
+
+#menu-home {
+  margin: 1em;
+  margin-bottom: 5em;
+}
+
+.specials .hide {
+  display: none;
+}
+
+
+
+/************ UI Widget Feedback TextArea *********/
+  
+  
+  #the-textarea {
+	width: 100%;
+	min-height: 100px;
+	resize: none;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	padding: 0.5rem;
+	color: #666;
+ 
+  }
+  
+  #the-textarea:focus {
+	outline: none;
+	background-color: #FFFFD1;
+	border: 1px solid #B2B2B2;
+ 
+  }
+  
+  .the-count {
+	float: right;
+	padding: 0.1rem 0 0 0;
+	font-size: 0.875rem;
+  }
+
+  #nonmodal2 {    
+    color:  white;
+  }
+  .custom-ui-widget{	 
+    background: radial-gradient( #af5d56,#ff6f61);
+    font-size: 1em;
+    }
+
+/************ Random recipe Generator *********/ 
+
+#recipe-sec {
+  padding-top: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+#recipe-sec h3 {
+  line-height: 150% !important;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+}
+
+#recipe-sec h6 {
+  position: relative;
+  font-size: 18px !important;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+#box-with-image {
+  border-top:1px solid red;
+  display: block;
+  height:500px;
+  background: linear-gradient(#fff,#FFC5AD);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+ 
+#display {
+  float: right;
+  padding: 50px;
+  font-family: sans-serif;
+  font-size: 20px;
+  height: 10vh;
+  width: 100%;
+}
+
+ 
+#display p a{
+ text-transform: lowercase; 
+}
+
+#display img { 
+  position: relative;
+  top: -80px;
+  height: 300px;
+  width: 400px;
+  float: right;  
+}
+
+#box-with-image .btn-recipe {
+  position: relative;
+  width: 190px;
+  height: 40px;
+  top: 50px;
+  left: 100px;  
+  border: none;
+  background: #FFC5AD;
+  color: black;
+  font-size: 14px;
+  border: 1px solid red;
+  border-radius: 20px;
+   
+}
+
+#box-with-image  .btn-recipe:hover {
+  background: #ff6f61;
+}
+
+#box-with-image .btn-recipe:focus {  
+  box-shadow: none;
+}
+
+
+#display p {
+  position: relative;
+  font-size: 18px !important;
+  color: #fb5849;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+#display span{
+  position: relative;
+  font-size: 18px !important;
+  color: #be2b1d;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 40px !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+
+
+/******** Media Queries *******/
+@media screen and (max-width:768px) {
+  .section-large-text-inner h2 {
+    font-size: 3rem;    
+  }
+  
+  .section-large-text-inner h3 {
+    font-size: 2rem;    
+  }
+  
+  .section-large-text-inner p {
+    font-size: 1.5rem;    
+  }
+
+  .carousel {
+    width: 99.2vw;
+    height: 350px;    
+  }
+  
+}
+
+@media screen and (max-width: 1024px) { 
+  #banner-slide-show{
+    height: auto !important;
+  }  
+  .specials {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  #openingtimecontent {
+    padding-top: 3%;
+    text-align: center;
+    color: white;
+    padding-left: 8%;
+    height: 600px;
+    font-size: 1em;
+    width: 92%;
+  }
+  #openingtimecontent h3 {
+    font-size: 1.5em;
+    margin-top: 2rem;
+    color: #c82719;
+    text-shadow: 1px 1px 1px white;
+  }
+  
+  
+  #openingtimecontent p{
+    font-size: 1em;
+    margin-top: 1rem;
+    color: #6e6fb8;
+    text-shadow: 1px 1px 1px white;
+    letter-spacing: 2px;
+  }
+  .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    width: 100% !important;
+    flex-basis:100%;
+    text-align: center;
+  }
+  
+  
+}
+
+
+
+
+/* Javascript Final Project Home Page - Damanpreet - End*/
